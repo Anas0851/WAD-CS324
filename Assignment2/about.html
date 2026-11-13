@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>About section</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Pantry<span>Pal</span></a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="ai-kitchen.html">AI Kitchen</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container section">
+      <div class="about">
+        <section class="about-text">
+          <h1>About us</h1>
+          <p class="lead">PantryPal started with a simple problem: a few ingredients in the kitchen and no plan for dinner.</p>
+          <p>It is a recipe library with an AI cooking assistant built in. You can browse and filter recipes like on any food site, or type in what you have and get meals you can make with it. You can then ask for changes, like cooking without an oven or making a dish less spicy.</p>
+          <p>We made it mainly for university students and beginners who cook on a small budget with limited equipment. It should also help anyone who wants to waste less food.</p>
+
+          <h2>The team</h2>
+          <ul class="team">
+            <li>
+              <figure>
+                <div class="photo" id="anasphoto"><img src="images/WhatsApp Image 2026-10-18 at 7.21.52 PM.jpeg" alt="Portrait placeholder for Muhammad Anas"></div>
+                <figcaption><span class="name">Muhammad Anas</span></figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <div class="photo"><img src="images/WhatsApp Image 2026-10-18 at 6.52.17 PM.jpeg" alt="Portrait placeholder for Muhammad Hussnain Basharat"></div>
+                <figcaption><span class="name">Muhammad Hussnain Basharat</span></figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+
+        <section class="panel contact-panel">
+          <h2>Contact us</h2>
+          <form action="about.html" method="post">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="husnain@gmail.com" required>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button class="btn" type="submit">Send message</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-block">
+        <h2>PantryPal</h2>
+        <p>Recipes for everyone, and an AI that cooks with what you have.</p>
+      </div>
+      <nav class="footer-block">
+        <h2>Pages</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="ai-kitchen.html">AI Kitchen</a></li>
+          <li><a href="about.html">About and contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-block">
+        <h2>Contact</h2>
+        <address>
+          <a href="mailto:PantryPal@gmail.com">PantryPal@gmail.com</a>
+        </address>
+        
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

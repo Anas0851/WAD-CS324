@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Recipe library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Pantry<span>Pal</span></a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="recipes.html" class="active">Recipes</a></li>
+          <li><a href="ai-kitchen.html">AI Kitchen</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container section">
+      <h1>Recipe library</h1>
+
+      <div class="toolbar">
+        <form action="recipes.html" method="get">
+          <label for="lib-search">Search recipes</label>
+          <input type="search" id="lib-search" name="q" placeholder="Search recipes">
+          <button class="btn" type="submit">Search</button>
+        </form>
+        <div class="sort">
+          <label for="sort">Sort by</label>
+          <select id="sort" name="sort">
+            <option>Newest</option>
+            <option>Shortest time</option>
+            <option>A to Z</option>
+          </select>
+        </div>
+      </div>
+
+      <form class="filters" action="recipes.html" method="get">
+        <fieldset>
+          <legend>Category</legend>
+          <label><input type="checkbox" name="category" value="breakfast">Breakfast</label>
+          <label><input type="checkbox" name="category" value="lunch">Lunch</label>
+          <label><input type="checkbox" name="category" value="dinner">Dinner</label>
+          <label><input type="checkbox" name="category" value="dessert">Dessert</label>
+        </fieldset>
+        <fieldset>
+          <legend>Time</legend>
+          <label><input type="radio" name="time" value="15">Under 15 min</label>
+          <label><input type="radio" name="time" value="30">Under 30 min</label>
+          <label><input type="radio" name="time" value="more">30 min or more</label>
+        </fieldset>
+        <button class="btn" type="submit">Apply filters</button>
+      </form>
+
+      <div class="results">
+        <ul class="card-list three-up">
+            <li class="recipe-card">
+              <a href="recipe.html">
+                <img src="images/egg-fried-rice.jfif" alt="A plate of egg fried rice with peas and carrot">
+                <div class="card-body">
+                  <h3>Egg fried rice</h3>
+                  <p>20 min</p>
+                </div>
+              </a>
+            </li>
+            <li class="recipe-card">
+              <a href="recipe.html">
+                <img src="images/tomato-pasta.jfif" alt="Pasta in a red tomato sauce on a white plate">
+                <div class="card-body">
+                  <h3>Tomato garlic pasta</h3>
+                  <p>15 min</p>
+                </div>
+              </a>
+            </li>
+            <li class="recipe-card">
+              <a href="recipe.html">
+                <img src="images/masala-omelette.jfif" alt="A folded yellow omelette with green herbs">
+                <div class="card-body">
+                  <h3>Masala omelette</h3>
+                  <p>10 min</p>
+                </div>
+              </a>
+            </li>
+            <li class="recipe-card">
+              <a href="recipe.html">
+                <img src="images/banana-pancakes.jfif" alt="A stack of pancakes topped with banana slices">
+                <div class="card-body">
+                  <h3>Banana pancakes</h3>
+                  <p>15 min</p>
+                </div>
+              </a>
+            </li>
+            <li class="recipe-card">
+              <a href="recipe.html">
+                <img src="images/channa-chart.jfif" alt="A plate of chickpea chaat with onion and herbs">
+                <div class="card-body">
+                  <h3>Chana chaat</h3>
+                  <p>10 min</p>
+                </div>
+              </a>
+            </li>
+            <li class="recipe-card">
+              <a href="recipe.html">
+                <img src="images/rice-kheer.jfif" alt="A bowl of creamy rice pudding with pistachios">
+                <div class="card-body">
+                  <h3>Rice kheer</h3>
+                  <p>40 min</p>
+                </div>
+              </a>
+            </li>
+        </ul>
+        <nav class="pagination">
+          <ul>
+            <li><a href="recipes.html">&lt;</a></li>
+            <li><a class="current" href="recipes.html">1</a></li>
+            <li><a href="recipes.html">2</a></li>
+            <li><a href="recipes.html">3</a></li>
+            <li><a href="recipes.html">&gt;</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-block">
+        <h2>PantryPal</h2>
+        <p>Recipes for everyone, and an AI that cooks with what you have.</p>
+      </div>
+      <nav class="footer-block">
+        <h2>Pages</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="ai-kitchen.html">AI Kitchen</a></li>
+          <li><a href="about.html">About and contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-block">
+        <h2>Contact</h2>
+        <address>
+          <a href="mailto:PantryPal@gmail.com">PantryPal@gmail.com</a>
+        </address>
+       
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

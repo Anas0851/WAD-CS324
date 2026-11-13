@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PantryPal | Cook with what you have</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Pantry<span>Pal</span></a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="ai-kitchen.html">AI Kitchen</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <img class="hero-image" src="images/hero.jfif" alt="Eggs, a tomato, a lemon and a plate of rice on a kitchen table">
+        <div class="hero-text">
+          <h1>Cook with what you have</h1>
+          <p class="lead">Browse recipes, or ask the AI assistant what you can make with the ingredients already in your kitchen.</p>
+          <form action="recipes.html" method="get">
+            <label for="home-search">Search recipes</label>
+            <input type="search" id="home-search" name="q" placeholder="Try rice or pasta">
+            <button class="btn" type="submit">Search</button>
+          </form>
+          <p>Or <a href="ai-kitchen.html">ask the AI Kitchen Assistant</a> instead.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <h2>Browse by category</h2>
+      <ul class="chip-list">
+        <li><a class="chip" href="recipes.html">Breakfast</a></li>
+        <li><a class="chip" href="recipes.html">Quick</a></li>
+        <li><a class="chip" href="recipes.html">Budget</a></li>
+        <li><a class="chip" href="recipes.html">Dessert</a></li>
+      </ul>
+    </section>
+
+    <section class="container">
+      <h2>Featured recipes</h2>
+      <ul class="card-list">
+            <li class="recipe-card">
+              <a href="recipe.html">
+                <img src="images/egg-fried-rice.jfif" alt="A plate of egg fried rice with peas and carrot">
+                <div class="card-body">
+                  <h3>Egg fried rice</h3>
+                  <p>20 min</p>
+                </div>
+              </a>
+            </li>
+            <li class="recipe-card">
+              <a href="recipe.html">
+                <img src="images/tomato-pasta.jfif" alt="Pasta in a red tomato sauce on a white plate">
+                <div class="card-body">
+                  <h3>Tomato garlic pasta</h3>
+                  <p>15 min</p>
+                </div>
+              </a>
+            </li>
+            <li class="recipe-card">
+              <a href="recipe.html">
+                <img src="images/masala-omelette.jfif" alt="A folded yellow omelette with green herbs">
+                <div class="card-body">
+                  <h3>Masala omelette</h3>
+                  <p>10 min</p>
+                </div>
+              </a>
+            </li>
+            <li class="recipe-card">
+              <a href="recipe.html">
+                <img src="images/banana-pancakes.jfif" alt="A stack of pancakes topped with banana slices">
+                <div class="card-body">
+                  <h3>Banana pancakes</h3>
+                  <p>15 min</p>
+                </div>
+              </a>
+            </li>
+      </ul>
+    </section>
+
+    <section class="section container">
+      <div class="ai-banner">
+        <div class="banner-text">
+          <h2>Not sure what to cook?</h2>
+          <p>Type in what you have and get meals you can make tonight.</p>
+        </div>
+        <a class="btn btn-accent" href="ai-kitchen.html">Try the AI Kitchen Assistant</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-block">
+        <h2>PantryPal</h2>
+        <p>Recipes for everyone, and an AI that cooks with what you have.</p>
+      </div>
+      <nav class="footer-block">
+        <h2>Pages</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="ai-kitchen.html">AI Kitchen</a></li>
+          <li><a href="about.html">About and contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-block">
+        <h2>Contact</h2>
+        <address>
+          <a href="mailto:PantryPal@gmail.com">PantryPal@gmail.com</a>
+        </address>
+       
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

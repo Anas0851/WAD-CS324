@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AI Kitchen Assistant | PantryPal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Pantry<span>Pal</span></a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="ai-kitchen.html" class="active">AI Kitchen</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container section">
+      <h1>AI Kitchen Assistant</h1>
+      <p class="lead">Add what you have. The assistant suggests meals you can cook with it.</p>
+
+      <div class="assistant">
+        <section class="panel your-ingredients">
+          <h2>Your ingredients</h2>
+          <form action="ai-kitchen.html" method="get">
+            <div class="field add-row">
+              <label for="ingredient">Add an ingredient</label>
+              <input type="text" id="ingredient" name="ingredient" placeholder="For example, onion">
+              <button class="btn" type="submit">Add</button>
+            </div>
+
+            <h3>Added so far</h3>
+            <ul class="chip-list">
+              <li class="chip-have">Egg <button type="button" title="Remove egg">&times;</button></li>
+              <li class="chip-have">Rice <button type="button" title="Remove rice">&times;</button></li>
+              <li class="chip-have">Milk <button type="button" title="Remove milk">&times;</button></li>
+            </ul>
+
+            <h3>Quick add</h3>
+            <ul class="chip-list">
+              <li><button class="chip" type="button">+ Tomato</button></li>
+              <li><button class="chip" type="button">+ Potato</button></li>
+              <li><button class="chip" type="button">+ Onion</button></li>
+              <li><button class="chip" type="button">+ Bread</button></li>
+            </ul>
+
+            <div class="option-row">
+              <div>
+                <label for="time">Time</label>
+                <select id="time" name="time">
+                  <option>Any</option>
+                  <option>Under 15 min</option>
+                  <option>Under 30 min</option>
+                </select>
+              </div>
+              <div>
+                <label for="diet">Diet</label>
+                <select id="diet" name="diet">
+                  <option>Any</option>
+                  <option>Vegetarian</option>
+                  <option>Vegan</option>
+                </select>
+              </div>
+              <div>
+                <label for="equipment">Equipment</label>
+                <select id="equipment" name="equipment">
+                  <option>Any</option>
+                  <option>Stove only</option>
+                  <option>No oven</option>
+                  <option>Microwave only</option>
+                </select>
+              </div>
+            </div>
+
+            <button class="btn" type="submit">Find meals</button>
+          </form>
+        </section>
+
+        <section class="panel suggestions-panel">
+          <h2>AI suggestions (example)</h2>
+          <ul class="card-list two-up">
+            <li class="recipe-card">
+              <a href="recipe.html">
+                <img src="images/masala-omelette.jfif" alt="A folded yellow omelette with green herbs">
+                <div class="card-body">
+                  <h3>Masala omelette</h3>
+                  <p>10 min</p>
+                </div>
+              </a>
+            </li>
+            <li class="recipe-card">
+              <a href="recipe.html">
+                <img src="images/egg-fried-rice.jfif" alt="A plate of egg fried rice with peas and carrot">
+                <div class="card-body">
+                  <h3>Egg fried rice</h3>
+                  <p>20 min</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <div class="assistant-message">
+            <p>With eggs, rice and milk you can make egg fried rice or a masala omelette tonight. Both take about 15 minutes and need only a pan.</p>
+            <p>If you add an onion, the omelette gets a lot better.</p>
+          </div>
+
+          <form action="ai-kitchen.html" method="get">
+            <div class="field add-row">
+              <label for="follow">Ask a follow-up</label>
+              <input type="text" id="follow" name="follow" placeholder="For example, no oven or less spicy">
+              <button class="btn" type="submit">Send</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-block">
+        <h2>PantryPal</h2>
+        <p>Recipes for everyone, and an AI that cooks with what you have.</p>
+      </div>
+      <nav class="footer-block">
+        <h2>Pages</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="ai-kitchen.html">AI Kitchen</a></li>
+          <li><a href="about.html">About and contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-block">
+        <h2>Contact</h2>
+        <address>
+          <a href="mailto:PantryPal@gmail.com">PantryPal@gmail.com</a>
+        </address>
+        
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,838 @@
+
+.green-dark {
+  color: rgb(20, 51, 43);
+}
+
+.green {
+  color: rgb(31, 90, 74);
+}
+
+.green-light {
+  color: rgb(59, 130, 105);
+}
+
+.leaf {
+  color: rgb(214, 229, 138);
+}
+
+.leaf-soft {
+  color: rgb(238, 245, 207);
+}
+
+.paper {
+  color: rgb(245, 247, 241);
+}
+
+.white {
+  color: rgb(255, 255, 255);
+}
+
+.ink {
+  color: rgb(24, 34, 30);
+}
+
+.muted {
+  color: rgb(85, 100, 92);
+}
+
+.line {
+  color: rgb(211, 218, 203);
+}
+
+.chili {
+  color: rgb(184, 58, 34);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: rgb(24, 34, 30);
+  background-color: rgb(255, 255, 255);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.2;
+  color: rgb(20, 51, 43);
+  margin: 0 0 0.5em 0;
+}
+
+h1 {
+  font-size: 2.6rem;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  margin: 0 0 1em 0;
+  max-width: 40em;
+}
+
+a {
+  color: rgb(31, 90, 74);
+}
+
+.container {
+  width: 90%;
+  max-width: 68rem;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 2.5em 0;
+}
+
+.lead {
+  font-size: 1.15rem;
+  color: rgb(85, 100, 92);
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(211, 218, 203);
+}
+
+.site-header .container {
+  padding: 0.9em 0;
+  overflow: auto;
+}
+
+.logo {
+  float: left;
+  margin-right: 2em;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(20, 51, 43);
+}
+
+.logo span {
+  color: rgb(59, 130, 105);
+}
+
+.main-nav {
+  float: right;
+}
+
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 1.2em;
+}
+
+.main-nav a {
+  display: inline-block;
+  padding: 0.4em 0;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(31, 90, 74);
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+.main-nav a.active {
+  color: rgb(20, 51, 43);
+  border-bottom: 3px solid rgb(214, 229, 138);
+}
+
+.btn {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.6em 1.2em;
+  border: 2px solid rgb(31, 90, 74);
+  border-radius: 8px;
+  background-color: rgb(31, 90, 74);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(20, 51, 43);
+  border-color: rgb(20, 51, 43);
+}
+
+.btn:active {
+  background-color: rgb(12, 32, 25);
+}
+
+.btn-light {
+  background-color: rgb(255, 255, 255);
+  color: rgb(31, 90, 74);
+}
+
+.btn-light:hover {
+  background-color: rgb(238, 245, 207);
+  color: rgb(20, 51, 43);
+}
+
+.btn-accent {
+  background-color: rgb(214, 229, 138);
+  border-color: rgb(214, 229, 138);
+  color: rgb(20, 51, 43);
+}
+
+.btn-accent:hover {
+  background-color: rgb(196, 216, 108);
+  border-color: rgb(196, 216, 108);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+
+input[type="text"],
+input[type="search"],
+input[type="email"],
+select,
+textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.55em 0.7em;
+  border: 2px solid rgb(211, 218, 203);
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(24, 34, 30);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+}
+
+input[type="search"] {
+  width: 65%;
+  min-width: 10em;
+}
+
+textarea {
+  height: 8em;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: rgb(59, 130, 105);
+  outline: 3px solid rgb(214, 229, 138);
+}
+
+.field {
+  margin-bottom: 1em;
+}
+
+.add-row input[type="text"] {
+  width: 72%;
+}
+
+.chip-list {
+  margin: 0;
+  padding: 0;
+}
+
+.chip-list li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 0.5em 0.5em 0;
+}
+
+.chip {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: bold;
+  padding: 0.3em 1em;
+  border: 2px solid rgb(31, 90, 74);
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(31, 90, 74);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.chip:hover {
+  background-color: rgb(31, 90, 74);
+  color: rgb(255, 255, 255);
+}
+
+.chip-have {
+  padding: 0.2em 0.4em 0.2em 0.9em;
+  border-radius: 20px;
+  background-color: rgb(214, 229, 138);
+  font-weight: bold;
+  color: rgb(20, 51, 43);
+}
+
+.chip-have button {
+  font-family: inherit;
+  font-size: 1rem;
+  width: 1.6em;
+  height: 1.6em;
+  border: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  color: rgb(20, 51, 43);
+  cursor: pointer;
+}
+
+.chip-have button:hover {
+  background-color: rgb(184, 58, 34);
+  color: rgb(255, 255, 255);
+}
+
+.hero {
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(211, 218, 203);
+}
+
+.hero .container {
+  padding: 3em 0;
+  overflow: auto;
+}
+
+.hero-text {
+  float: left;
+  width: 50%;
+  min-width: 18em;
+  margin-right: 3%;
+}
+
+.hero-image {
+  float: right;
+  width: 45%;
+  min-width: 14em;
+  border: 1px solid rgb(211, 218, 203);
+  border-radius: 8px;
+}
+
+.hero form {
+  margin-bottom: 1em;
+}
+
+.card-list {
+  margin: 0;
+  padding: 0;
+}
+
+.recipe-card {
+  display: inline-block;
+  vertical-align: top;
+  list-style-type: none;
+  width: 22%;
+  min-width: 11em;
+  margin: 0 2% 1.5em 0;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(211, 218, 203);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+}
+
+.recipe-card:hover {
+  top: -4px;
+  box-shadow: 0 8px 18px rgb(154, 168, 159);
+}
+
+.recipe-card a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.recipe-card img {
+  width: 100%;
+}
+
+.card-body {
+  padding: 20px 20px 20px 20px;
+}
+
+.card-body h3 {
+  margin-bottom: 0.2em;
+}
+
+.card-body p {
+  margin: 0;
+  color: rgb(85, 100, 92);
+  font-size: 0.95rem;
+}
+
+.three-up .recipe-card {
+  width: 30%;
+}
+
+.two-up .recipe-card {
+  width: 46%;
+}
+
+.ai-banner {
+  background-color: rgb(20, 51, 43);
+  border-radius: 8px;
+  padding: 2em;
+  overflow: auto;
+}
+
+.ai-banner .banner-text {
+  float: left;
+  width: 65%;
+  min-width: 16em;
+  margin-bottom: 0.5em;
+}
+
+.ai-banner h2 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 0.2em;
+}
+
+.ai-banner p {
+  margin: 0;
+  color: rgb(219, 232, 224);
+}
+
+.ai-banner .btn {
+  float: right;
+}
+
+.toolbar {
+  margin-bottom: 1.5em;
+}
+
+.toolbar form,
+.toolbar .sort {
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 0 1.5em 0.5em 0;
+}
+
+.toolbar .sort label {
+  display: inline-block;
+}
+
+.filters {
+  display: inline-block;
+  vertical-align: top;
+  width: 22%;
+  min-width: 12em;
+  margin-right: 2%;
+  margin-bottom: 1.5em;
+  padding: 1em 1.2em 1.3em 1.2em;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(211, 218, 203);
+  border-radius: 8px;
+}
+
+.filters fieldset {
+  border: 0;
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+
+.filters legend {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: rgb(20, 51, 43);
+  padding: 0;
+  margin-bottom: 0.3em;
+}
+
+.filters label {
+  font-weight: normal;
+  margin: 0;
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.filters label:hover {
+  background-color: rgb(238, 245, 207);
+}
+
+.filters input {
+  margin-right: 0.5em;
+}
+
+.results {
+  display: inline-block;
+  vertical-align: top;
+  width: 74%;
+  min-width: 16em;
+}
+
+.pagination {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.pagination ul {
+  margin: 0;
+  padding: 0;
+}
+
+.pagination li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 0.2em;
+}
+
+.pagination a {
+  display: inline-block;
+  min-width: 2.5em;
+  padding: 0.4em 0.7em;
+  text-align: center;
+  border: 2px solid rgb(211, 218, 203);
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(31, 90, 74);
+}
+
+.pagination a:hover {
+  border-color: rgb(59, 130, 105);
+  background-color: rgb(238, 245, 207);
+}
+
+.pagination a.current {
+  background-color: rgb(31, 90, 74);
+  border-color: rgb(31, 90, 74);
+  color: rgb(255, 255, 255);
+}
+
+.breadcrumb {
+  padding-top: 1.2em;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.recipe-head {
+  padding: 1.5em 0 2em 0;
+  overflow: auto;
+}
+
+.recipe-photo {
+  float: left;
+  width: 48%;
+  min-width: 16em;
+  margin: 0 3% 1em 0;
+}
+
+.recipe-photo img {
+  border: 1px solid rgb(211, 218, 203);
+  border-radius: 8px;
+}
+
+.recipe-info {
+  float: left;
+  width: 46%;
+  min-width: 16em;
+}
+
+.facts {
+  margin: 0 0 1.2em 0;
+  padding: 0;
+}
+
+.facts li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 1.5em;
+}
+
+.recipe-body {
+  overflow: auto;
+  padding-bottom: 2em;
+}
+
+.panel {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(211, 218, 203);
+  border-radius: 8px;
+  padding: 1.2em 1.5em 1.5em 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.ingredients-panel {
+  float: left;
+  width: 35%;
+  min-width: 16em;
+  margin-right: 3%;
+}
+
+.steps-panel {
+  float: left;
+  width: 60%;
+  min-width: 18em;
+}
+
+.checklist {
+  margin: 0;
+  padding: 0;
+}
+
+.checklist li {
+  list-style-type: none;
+  padding: 0.35em 0;
+  border-bottom: 1px solid rgb(211, 218, 203);
+}
+
+.checklist li:last-child {
+  border-bottom: 0;
+}
+
+.checklist label {
+  font-weight: normal;
+  margin: 0;
+  cursor: pointer;
+}
+
+.checklist input {
+  margin-right: 0.6em;
+}
+
+.checklist input:checked + span {
+  color: rgb(85, 100, 92);
+  text-decoration: line-through;
+}
+
+.hint {
+  font-size: 0.95rem;
+  color: rgb(85, 100, 92);
+}
+
+.steps {
+  margin: 0;
+  padding-left: 1.4em;
+}
+
+.steps li {
+  margin-bottom: 0.9em;
+  padding-left: 0.3em;
+}
+
+.assistant {
+  overflow: auto;
+}
+
+.assistant .your-ingredients {
+  float: left;
+  width: 42%;
+  min-width: 18em;
+  margin-right: 2%;
+}
+
+.assistant .suggestions-panel {
+  float: left;
+  width: 55%;
+  min-width: 20em;
+}
+
+.assistant h2 {
+  font-size: 1.4rem;
+}
+
+.assistant h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  margin: 1.2em 0 0.5em 0;
+}
+
+.add-row button {
+  margin-left: 0.4em;
+}
+
+.option-row {
+  margin: 1.2em 0;
+}
+
+.option-row div {
+  display: inline-block;
+  vertical-align: top;
+  width: 31%;
+  min-width: 7em;
+  margin-right: 1%;
+}
+
+.option-row label {
+  font-size: 0.9rem;
+}
+
+.option-row select {
+  width: 100%;
+  padding: 0.45em;
+}
+
+.assistant-message {
+  background-color: rgb(238, 245, 207);
+  border-left: 5px solid rgb(59, 130, 105);
+  border-radius: 0 8px 8px 0;
+  padding: 0.9em 1.1em;
+  margin-bottom: 1.2em;
+}
+
+.assistant-message p {
+  margin-bottom: 0.5em;
+}
+
+.assistant-message p:last-child {
+  margin-bottom: 0;
+}
+
+.about {
+  overflow: auto;
+}
+
+.about-text {
+  float: left;
+  width: 55%;
+  min-width: 18em;
+  margin-right: 4%;
+}
+
+.contact-panel {
+  float: left;
+  width: 40%;
+  min-width: 18em;
+}
+
+.team {
+  margin: 1.5em 0 0 0;
+  padding: 0;
+}
+
+.team li {
+  display: inline-block;
+  vertical-align: top;
+  list-style-type: none;
+  width: 10em;
+  margin: 0 1.5em 1em 0;
+  text-align: center;
+}
+
+.team figure {
+  margin: 0;
+}
+
+.team .photo {
+  width: 9em;
+  height: 9em;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 3px solid rgb(214, 229, 138);
+  overflow: hidden;
+}
+
+.team .photo img:hover {
+  width: 112%;
+  max-width: 112%;
+  margin: -6% 0 0 -6%;
+}
+
+.team figcaption {
+  margin-top: 0.6em;
+}
+
+.team .name {
+  display: block;
+  font-weight: bold;
+}
+
+.team .role {
+  color: rgb(85, 100, 92);
+  font-size: 0.95rem;
+}
+
+.site-footer {
+  background-color: rgb(20, 51, 43);
+  color: rgb(219, 232, 224);
+  margin-top: 2em;
+  padding: 2em 0;
+  font-size: 0.97rem;
+}
+
+.footer-block {
+  display: inline-block;
+  vertical-align: top;
+  width: 31%;
+  min-width: 13em;
+  margin-right: 1%;
+  margin-bottom: 1em;
+}
+
+.site-footer h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0.4em;
+}
+
+.site-footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.site-footer li {
+  list-style-type: none;
+}
+
+.site-footer p,
+.site-footer address {
+  margin: 0 0 0.3em 0;
+  font-style: normal;
+}
+
+.site-footer a {
+  color: rgb(214, 229, 138);
+}
+
+.site-footer a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.site-footer a:visited {
+  color: rgb(169, 185, 138);
+}
+
+
+#anaspohoto{
+  width: 50px;
+}
